@@ -1,8 +1,8 @@
 class Pixeltube < Formula
   desc "Terminal-based YouTube browser and pixel art video player"
   homepage "https://github.com/mawmawmaw/pixeltube"
-  url "https://github.com/mawmawmaw/pixeltube/archive/refs/tags/v0.0.4.tar.gz"
-  sha256 "6a92f07fe8795d5783bf0e3a3c135c43f73cdea68b71c6b763d08c05220cb0bb"
+  url "https://github.com/mawmawmaw/pixeltube/archive/refs/tags/v0.0.6.tar.gz"
+  sha256 "7a31844dbc7efc2ff65088de58635f0741a130987efb63a6bcb3a5c17360c0ed"
   license "MIT"
 
   depends_on "node"
