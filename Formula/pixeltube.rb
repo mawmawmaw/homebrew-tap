@@ -1,8 +1,8 @@
 class Pixeltube < Formula
   desc "Terminal-based YouTube browser and pixel art video player"
   homepage "https://github.com/mawmawmaw/pixeltube"
-  url "https://github.com/mawmawmaw/pixeltube/archive/refs/tags/v0.0.8.tar.gz"
-  sha256 "c406fc92c207056ebd9462c5c5567ef26e2eb9e22a127b3dc3b176595cf551f8"
+  url "https://github.com/mawmawmaw/pixeltube/archive/refs/tags/v0.0.9.tar.gz"
+  sha256 "823143a53bbf89d166718834eb35390e8c71b379fbe7128daf263a868c16f3f7"
   license "MIT"
 
   depends_on "node"
@@ -10,6 +10,7 @@ class Pixeltube < Formula
   depends_on "yt-dlp"
 
   def install
+    ENV["HOMEBREW_NO_ENV_HINTS"] = "1"
     system "npm", "install"
     system "npm", "run", "build"
     system "npm", "prune", "--omit=dev"
